@@ -1,1 +1,1 @@
-# angsd_genotyping_workflow
+#ANGSD for genotyping and SNP filtering
