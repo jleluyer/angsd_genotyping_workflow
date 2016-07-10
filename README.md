@@ -25,7 +25,7 @@ sbatch 00_scripts/01_cutadapt.sh
 ### Demultiplexing
 
 ```
-sbatch 00_scripts/02_GBSX
+sbatch 00_scripts/02_demultiplexing.sh
 ```
 
 ### Mapping
