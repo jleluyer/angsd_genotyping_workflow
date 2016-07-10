@@ -16,6 +16,29 @@ cd htslib;make;cd ../angsd ;make HTSSRC=../htslib
 
 ## Documentation
 
+### Trimming
+
+```
+sbatch 00_scripts/01_cutadapt.sh
+```
+
+### Demultiplexing
+
+```
+sbatch 00_scripts/02_GBSX
+```
+
+### Mapping
+
+```
+sbatch 00_scripts/03_mapping_gsnap.sh
+```
+
+### Genotyping
+
+```
+sbatch 00_scripts/04_genotyping.sh
+```
 **In progress**
 
 ## Citation
