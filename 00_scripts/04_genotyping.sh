@@ -133,6 +133,6 @@ angsd -bam $INPUT $NCPU $OUTPUT \
 	$GL $trim $tmpdir $errors $minInd \
 	$Maf $Post $minMaf $SNP_pval $rmTriallelic \
 	$ref $anc $eps $beagleProb $indFame \
-	$MajorMinor $rmTrans $skipTriallelic
+	$MajorMinor $rmTrans $skipTriallelic '2>&1' '>>' 98_log_files/"$TIMESTAMP"_angsd.log
 	
 
