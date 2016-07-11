@@ -24,6 +24,9 @@ LOG_FOLDER="10-log_files"
 
 cp $SCRIPT $LOG_FOLDER/"$TIMESTAMP"_"$NAME"
 
+#Create output directory
+mkdir 02_data/demultiplexed
+
 #Global variables
 INPUT="file.fastq.gz"
 BARCODES="list_barcodes.txt"
