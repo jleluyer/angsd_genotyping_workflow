@@ -33,7 +33,7 @@ fi
 # Create directory for untrimmed files
 mkdir 02_data/trimmed 2>/dev/null
 
-rm 10-log_files/"$TIMESTAMP"_01_cutadapt"${i%.fastq.gz}".log 2> /dev/null
+rm 98_log_files/"$TIMESTAMP"_01_cutadapt"${i%.fastq.gz}".log 2> /dev/null
 
 ls -1 02_data/*.f*q.gz |
 parallel -j $NCPU cutadapt -a file:01_info_files/adapters.fasta \
