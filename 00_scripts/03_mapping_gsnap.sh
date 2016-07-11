@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #SBATCH -D ./ 
-#SBATCH --job-name="angsd"
-#SBATCH -o log-angsd
-#SBATCH --error="log-angsd.err"
-#SBATCH -c 12
+#SBATCH --job-name="gsnap"
+#SBATCH -o log-gsnap
+#SBATCH --error="log-gsnap.err"
+#SBATCH -c 8
 #SBATCH -p ibis2
 #SBATCH -A ibis2
 #SBATCH --mail-type=ALL
