@@ -36,11 +36,24 @@ sbatch 00_scripts/03_mapping_gsnap.sh
 
 ### Genotyping
 
+#### Create list of .bam files
+
+```
+ls -1 03_mapped/*.bam > 01_info_files/list_bam
+```
+
+#### Conduct genotyping
+
 ```
 sbatch 00_scripts/04_genotyping.sh
+
 ```
 **In progress**
 
 ## Citation
 
 Korneliussen T. S., Albrechtsen A. and Nielsen R. 2014. ANGSD: Analysis of Next Generation Sequencing Data. *BMC Bioinformatics*. [DOI: 10.1186/s12859-014-0356-4](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-014-0356-4)
+
+## Licence
+
+This workflow is licensed under the GPL3 license. See the LICENCE file for more details.

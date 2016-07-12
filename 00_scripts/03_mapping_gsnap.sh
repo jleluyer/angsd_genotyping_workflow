@@ -37,8 +37,8 @@ base=__BASE__
     echo "Creating bam for $base"
 
     samtools view -Sb -q 1 -F 4  \
-        $DATAOUTPUT/"$base".sam >  $DATAOUTPUT/"$base".bam
-	
+        $DATAOUTPUT/"$base".sam >  $DATAOUTPUT/"$base".raw.bam
+
      echo "Creating sorted bam for $base"
 	samtools sort -n "$DATAOUTPUT"/"$base".bam "$DATAOUTPUT"/"$base".sorted
     
