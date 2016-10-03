@@ -32,7 +32,10 @@ NCPU="-P 4"
 
 ######## 
 # ANGSD variables
-
+#example :angsd -bam list_bam -GL 1 -doGlf 4 -remove_bads 1 -uniqueOnly 1 \
+#        -doGeno 4 -doCounts 1 -geno_minDepth 5 -setMinDepth 495 -setMaxDepth 46500 -dumpCounts 2 \
+#        -doMaf 2 -minMaf 0.1 -minInd 45 -minMapQ 10 -minQ 10 -doMajorMinor 1 -SNP_pval 1e-6 -hwe_pval 1 -doPost 2 -P 6 \
+#        -out geno_catlog_M8N10
 # bam
 bam="-bam"
 	rf="-rf [region file]"	 			# Specify multiple regions in a file using the same syntax as -r
