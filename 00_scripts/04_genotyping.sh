@@ -27,7 +27,7 @@ cp $SCRIPT $LOG_FOLDER/"$TIMESTAMP"_"$NAME"
 
 # Global variables
 INPUT="01_info_files/list_bam"
-OUTPUTIND="-out test_angsd"
+OUTPUT="-out test_angsd"
 NCPU="-P 4"
 
 ######## 
