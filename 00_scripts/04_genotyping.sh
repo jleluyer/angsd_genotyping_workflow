@@ -37,7 +37,7 @@ NCPU="-P 4"
 #        -doMaf 2 -minMaf 0.1 -minInd 45 -minMapQ 10 -minQ 10 -doMajorMinor 1 -SNP_pval 1e-6 -hwe_pval 1 -doPost 2 -P 6 \
 #        -out geno_catlog_M8N10
 # bam
-bam="-bam"
+bam="-bam $INPUT"
 	rf="-rf [region file]"	 			# Specify multiple regions in a file using the same syntax as -r
 	remove_bads="-remove_bads 1"			# Same as the samtools flags -x which removes read with a flag above 255 (not primary, failure and duplicate reads). 0 no , 1 remove (default).
 	uniqueOnly="-uniqueOnly 1"			# Remove reads that have multiple best hits. 0 no (default), 1 remove.
